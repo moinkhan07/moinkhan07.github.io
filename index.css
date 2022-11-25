@@ -170,37 +170,70 @@
 
 #tech-stack{
     width: 100%;
-    height: 750px;
+    height: 800px;
     background-color: rgb(244, 244, 244);
 }
 #tech-stack>h1{
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 40px;
     color: rgb(255, 166, 64);
 }
 #all_logo{
-    width: 80%;
+    width: 70%;
     height: 600px;
-    border: 1px solid black;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+}
+#all_logo>div{
+    width: 180px;
+    height: 180px;
+    border: 1px solid #234365;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+#all_logo>div>img{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
 }
 
-#skills{
-    width: 100%;
-    height: 600px;
-    background-color: rgb(244, 244, 244);
+#all_logo>.neeche{
+    display:inline-block;
 }
-#skills>h1{
+#all_logo>.neeche>h2{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #234365;
+}
+
+/* ---------------------------------------Skills end here---------------------------------- */
+#projects{
+    width: 100%;
+    height: 1780px;
+    background-color: #234365;
+}
+#projects>h1{
     text-align: center;
-    padding-bottom: 10px;
     font-size: 40px;
+    margin-bottom: 25px;
+    padding-top: 35px;
     color: rgb(255, 166, 64);
 }
-#all_skill_logo{
-    width: 80%;
+.project_{
+    width: 90%;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 166, 64);
+    border-radius: 20px;
     margin: auto;
+    margin-bottom: 50px;
 }

@@ -219,7 +219,7 @@
 /* ---------------------------------------Skills end here---------------------------------- */
 #projects{
     width: 100%;
-    height: 1780px;
+    height: 1620px;
     background-color: #234365;
 }
 #projects>h1{
@@ -231,9 +231,121 @@
 }
 .project_{
     width: 90%;
-    height: 500px;
-    border: 1px solid rgb(255, 166, 64);
+    height: 450px;
+    border: 1px solid rgb(244, 244, 244);;
     border-radius: 20px;
     margin: auto;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#projects>.project_>.project_img{
+    width: 500px;
+}
+#projects>.project_>.project_img>img{
+    width: 100%;
+    border-radius: 20px;
+}
+#projects>.project_>.projects_Info>p{
+    font-size: 18px;
+    color: white;
+    line-height: 33px;
+    font-weight: lighter;
+}
+#projects>.project_>.projects_Info>h1{
+    font-size: 35px;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+#projects>.project_>.projects_Info>button{
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#projects>.project_>.projects_Info>button:hover{
+    background-color: #234365;
+    color: rgb(255, 166, 64);
+    border: 1px solid rgb(255, 166, 64);
+}
+
+/* ----------------------------------------Projects end here------------------------------------ */
+
+
+#statistic{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(244, 244, 244);
+}
+#statistic>h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+    padding-top: 35px;
+    color: rgb(255, 166, 64);
+}
+
+/* ---------------------------------------------Statistic end here----------------------------------- */
+#github{
+    width: 100%;
+    height: 1800px;
+    background-color:#234365;
+}
+#github>h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+    padding-top: 35px;
+    color: rgb(255, 166, 64);
+}
+#stats{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#stats>img{
+    width: 100%;
+}
+#stats_2{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#stats_2>img{
+    width: 100%;
+}
+#stats_3{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#stats_3>img{
+    width: 100%;
+}
+
+#mul{
+    width: 80%;
+    margin: auto;
+}
+#mul>img{
+    width: 100%;
+}
+
+/* ---------------------------------------------Github end here--------------------------------------- */
+#contact{
+    width: 100%;
+    height: 500px;
+}
+#contact>h1{
+text-align: center;
+font-size: 40px;
+margin-bottom: 25px;
+padding-top: 35px;
+color: rgb(255, 166, 64);
 }

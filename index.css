@@ -197,7 +197,7 @@
     align-items: center;
     text-align: center;
     padding-top: 20px;
-    border: 4px solid #234365;
+    border: 3px solid #234365;
     border-radius: 20px;
 }
 #all_logo>div>img{
@@ -303,7 +303,7 @@
 #statistic_div>div{
     width: 22%;
     height: 180px;
-    border: 4px solid #234365;
+    border: 3px solid #234365;
     border-radius: 20px;
 }
 #statistic_div>div>.tp{
@@ -369,7 +369,8 @@
 /* ---------------------------------------------Github end here--------------------------------------- */
 #contact{
     width: 100%;
-    height: 500px;
+    height: 450px;
+    background-color: rgb(244, 244, 244);
 }
 #contact>h1{
 text-align: center;
@@ -377,4 +378,75 @@ font-size: 40px;
 margin-bottom: 25px;
 padding-top: 35px;
 color: rgb(255, 166, 64);
+}
+#contact_div{
+    width: 50%;
+    height: 200px;
+    margin: auto;
+}
+#contact_div>.contact_div_1{
+    width:55%;
+    height: 70px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    border: 3px solid #234365;
+    border-radius: 20px;
+    align-items: center;
+    color: #234365;
+   justify-content: space-around;
+   font-size: 20px;
+   cursor: pointer;
+}
+#contact_div>.contact_div_1>img{
+    width: 45px;   
+}
+
+#contact_div>.contact_div_2{
+    width:55%;
+    height: 70px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    border: 3px solid #234365;
+    border-radius: 20px;
+    align-items: center;
+    color: #234365;
+   justify-content: space-around;
+   font-size: 20px;
+   cursor: pointer;
+}
+#contact_div>.contact_div_2>img{
+    width: 45px;   
+}
+#contact_div>.contact_div_1:hover{
+    background-color: #d9d9d9;
+}
+#contact_div>.contact_div_2:hover{
+    background-color: #d9d9d9;
+}
+
+#contact_logo{
+    width: 25%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact_logo>div>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#copyright{
+    width: 100%;
+    height: 50px;
+    background-color: #234365;
+    color: rgb(255, 166, 64);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

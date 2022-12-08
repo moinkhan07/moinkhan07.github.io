@@ -155,8 +155,8 @@ nav ul li a:hover{
 }
 #tech-stack>h1{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 40px;
     font-size: 40px;
     color: rgb(255, 166, 64);
 }
@@ -459,11 +459,11 @@ color: rgb(255, 166, 64);
         background-color: rgb(244, 244, 244);
     }
     #home>h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     #home>h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 26px;
         color: #234365;
     }
     #about{
@@ -487,7 +487,6 @@ color: rgb(255, 166, 64);
     #info>h1{
         font-size: 40px;
         text-align: center;
-        font-weight: bolder;
     }
     #info>p{
         font-size: 16px;
@@ -495,7 +494,7 @@ color: rgb(255, 166, 64);
     }
     #resume_btn{
         display: flex;
-        width: 80%;
+        width: 95%;
         justify-content: space-between;
         margin: auto;
     }
@@ -503,8 +502,8 @@ color: rgb(255, 166, 64);
         background-color: #234365;
         position: fixed;
         top: 0;
-        right: -220px;
-        width: 220px;
+        right: -200px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;

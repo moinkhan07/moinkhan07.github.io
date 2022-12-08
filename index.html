@@ -6,21 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moin Khan | Java Back-End Developer</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="shortcut icon" href="https://t4.ftcdn.net/jpg/01/75/21/51/360_F_175215115_vzKw33X5KX386VCMUHdsseJQlp52xmLj.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="navbar">
+    <!-- <div id="navbar">
         <div id="logo"><h2>MOIN KHAN</h2></div>
-      <div id="tags">
-        <h3>Home</h3>
-        <h3>About</h3>
-        <h3>Skills</h3>
-        <h3>Projects</h3>
-        <h3>Github</h3>
-        <h3>Contact</h3>
-      </div>
+      <ul id="tags">
+       <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Github</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>  -->
+
+    <div id="navbar">
+        <nav>
+            <div id="logo"><h2>MOIN KHAN</h2></div>
+            <ul id="sidemenu">
+                <li><a href="">Home</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Skills</a></li>
+                 <li><a href="">Projects</a></li>
+                 <li><a href="">Github</a></li>
+                 <li><a href="">Contact</a></li>
+                 <i id="white" class="fa fa-solid fa-times" onclick="closemenu()"></i>
+               </ul>
+               <i id="white2" class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
     </div>
+
+
+
     <div id="home">
         <h1><span id="hi">Hi, I am </span>Moin Khan</h1>
         <h2>I'm a Java Backend Developer.</h2>
@@ -140,7 +158,7 @@
             </div>
             <div>
                 <p class="tp">6 Months</p>
-                <p class="tp2">Power Skills</p>
+                <p class="tp2">Soft Skills</p>
             </div>
         </div>
     </div>

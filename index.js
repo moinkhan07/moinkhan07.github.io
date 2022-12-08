@@ -3,7 +3,7 @@
 //     window.location.href = "https://www.linkedin.com/in/moinkhan07/";
 // }
 
-// let github = document.getElementById("github");
+// let github = document.getElementById("github_");
 // github.onclick = function(){
 //     window.location.href = "https://github.com/moinkhan07";
 // }
@@ -14,5 +14,5 @@ function openmenu(){
     sidemenu.style.right = "0";
 }
 function closemenu(){
-    sidemenu.style.right = "-250px";
+    sidemenu.style.right = "-220px";
 }

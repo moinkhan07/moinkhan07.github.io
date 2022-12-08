@@ -21,6 +21,7 @@ nav{
 #logo{
     font-size: 20px;
     color: white;
+    margin-top: 10px;
 }
 nav ul li{
 display: inline-block;
@@ -36,10 +37,7 @@ nav ul li a:hover{
     color: rgb(255, 166, 64);
     cursor: pointer;
 }
-#ham{
-    width: 40px;
-    display: none;
-}
+
 
 
                             /* ======================Navbar end here========================== */
@@ -95,8 +93,6 @@ nav ul li a:hover{
 #about_in{
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid gray;
-    border-radius: 25px; */
 }
 #photo>img{
     width: 310px;
@@ -243,7 +239,7 @@ nav ul li a:hover{
     font-weight: lighter;
     padding-bottom: 20px;
 }
-#projects>.project_>.projects_Info>button{
+#projects>.project_>.projects_Info>.project_btn>button{
     width: 120px;
     height: 45px;
     border-radius: 8px;
@@ -253,7 +249,7 @@ nav ul li a:hover{
     cursor: pointer;
     margin-top: 20px;
 }
-#projects>.project_>.projects_Info>button:hover{
+#projects>.project_>.projects_Info> .project_btn>button:hover{
     background-color: #234365;
     color: rgb(255, 166, 64);
     border: 1px solid rgb(255, 166, 64);
@@ -443,6 +439,7 @@ color: rgb(255, 166, 64);
     color: white;
     font-size: 25px;
     display: none;
+    margin-top: 10px;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -462,11 +459,11 @@ color: rgb(255, 166, 64);
         background-color: rgb(244, 244, 244);
     }
     #home>h1{
-        font-size: 40px;
+        font-size: 50px;
     }
     #home>h2{
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         color: #234365;
     }
     #about{
@@ -488,26 +485,26 @@ color: rgb(255, 166, 64);
         width: 100%;
     }
     #info>h1{
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
+        font-weight: bolder;
     }
     #info>p{
         font-size: 16px;
         line-height: 27px;
     }
-    #viewbtn{
-        margin-right: 50px;
+    #resume_btn{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
     }
-    #downbtn{
-        margin-left: 20px;
-    }
-    
     nav ul {
         background-color: #234365;
         position: fixed;
         top: 0;
-        right: -250px;
-        width: 250px;
+        right: -220px;
+        width: 220px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -526,15 +523,19 @@ color: rgb(255, 166, 64);
     #tech-stack{
         height: auto;
     }
+    #tech-stack>h1{
+        font-size: 35px;
+    }
     #all_logo{
         width: 100%;
         height: auto;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
         gap: 20px 0;
         padding-bottom: 50px;
+        justify-content: space-around;
     }
 
     #projects{
@@ -553,7 +554,7 @@ color: rgb(255, 166, 64);
         margin-top: 20px;
     }
     #projects>.project_>.projects_Info>p{
-        font-size: 18px;
+        font-size: 19px;
         color: white;
         line-height: 30px;
         padding: 0 15px;
@@ -563,9 +564,11 @@ color: rgb(255, 166, 64);
         padding: 20px 0;
         text-align: center;
     }
-    #projects>.project_>.projects_Info>button{    
-        margin-left: 40px;
-        margin-right: 30px;
+    #projects>.project_>.projects_Info .project_btn{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
     }
     #statistic{
         height: auto;
@@ -575,11 +578,11 @@ color: rgb(255, 166, 64);
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 20px 0;
     }
 #statistic_div>div{
-    width: 50%;
+    width: 80%;
     height: 180px;
     margin: auto;
 }
@@ -607,13 +610,15 @@ color: rgb(255, 166, 64);
         margin: auto;
     }
 #contact_div>.contact_div_1{
-    width:75%;
+    width:80%;
     height: 70px;
    font-size: 18px;
+   padding: 0 15px;
 }
 #contact_div>.contact_div_2{
-    width:75%;
+    width:80%;
     height: 70px;
    font-size: 18px;
+   padding: 0 15px;
 }
 }

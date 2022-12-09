@@ -63,9 +63,12 @@ nav ul li a:hover{
     color: rgb(255, 166, 64);
 }
 #social{
-    width: 220px;
+    width: 25%;
+    display: flex;
     margin: auto;
-    margin-top: 55px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
 }
 #social>img{
     width: 80px;
@@ -118,8 +121,7 @@ nav ul li a:hover{
     margin-bottom: 30px;
 }
 #viewbtn{
-    width: 150px;
-    height: 45px;
+    padding: 12px 20px;
     border-radius: 8px;
     outline: none;
     border: none;
@@ -487,14 +489,16 @@ color: rgb(255, 166, 64);
     #info>h1{
         font-size: 40px;
         text-align: center;
+        font-weight: 550;
     }
     #info>p{
-        font-size: 16px;
+        font-size: 18px;
         line-height: 27px;
+        padding-left: 10px;
     }
     #resume_btn{
         display: flex;
-        width: 95%;
+        width: 80%;
         justify-content: space-between;
         margin: auto;
     }

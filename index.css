@@ -69,7 +69,7 @@ nav ul li p:hover{
     align-items: center;
     margin-top: 45px;
 }
-#social>img{
+#social>a>img{
     width: 80px;
     height: 80px;
     border-radius: 15px;
@@ -120,12 +120,13 @@ nav ul li p:hover{
     margin-bottom: 30px;
 }
 #viewbtn{
+    background-color: white;
     padding: 12px 20px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
+    color: black;
+    text-decoration: none;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 8px;
 }
 #downbtn{
     background-color: white;
@@ -382,6 +383,10 @@ color: rgb(255, 166, 64);
    font-size: 20px;
    cursor: pointer;
 }
+#contact_div>.contact_div_1>a{
+    text-decoration: none;
+    color: #234365;
+}
 #contact_div>.contact_div_1>img{
     width: 45px;   
 }
@@ -400,6 +405,10 @@ color: rgb(255, 166, 64);
    font-size: 20px;
    cursor: pointer;
 }
+#contact_div>.contact_div_2>a{
+    text-decoration: none;
+    color: #234365;
+}
 #contact_div>.contact_div_2>img{
     width: 45px;   
 }
@@ -417,7 +426,7 @@ color: rgb(255, 166, 64);
     justify-content: space-around;
     align-items: center;
 }
-#contact_logo>div>img{
+#contact_logo>div>a>img{
     width: 80px;
     height: 80px;
     border-radius: 15px;
@@ -429,7 +438,6 @@ color: rgb(255, 166, 64);
     height: 50px;
     background-color: #234365;
     color: rgb(255, 166, 64);
-    /* text-align: center; */
     display: flex;
     align-items: center;
     justify-content: center;

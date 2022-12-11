@@ -103,7 +103,6 @@ nav ul li p:hover{
 }
 #info{
     width: 40%;
-    /* border: 1px solid white; */
 }
 #info>h1{
     font-size: 35px;
@@ -127,6 +126,7 @@ nav ul li p:hover{
     font-size: 18px;
     cursor: pointer;
     border-radius: 8px;
+    margin-right: 20px;
 }
 #downbtn{
     background-color: white;
@@ -186,7 +186,6 @@ nav ul li p:hover{
 #all_logo>div>img{
     width: 100px;
     height: 100px;
-    /* border: 1px solid black; */
 }
 
 #all_logo>.neeche{
@@ -367,12 +366,12 @@ padding-top: 35px;
 color: rgb(255, 166, 64);
 }
 #contact_div{
-    width: 50%;
+    width: 100%;
     height: 200px;
     margin: auto;
 }
 #contact_div>.contact_div_1{
-    width:55%;
+    width:25%;
     height: 70px;
     margin: auto;
     margin-top: 40px;
@@ -394,7 +393,7 @@ color: rgb(255, 166, 64);
 }
 
 #contact_div>.contact_div_2{
-    width:55%;
+    width:28%;
     height: 70px;
     margin: auto;
     margin-top: 20px;
@@ -510,7 +509,7 @@ color: rgb(255, 166, 64);
     }
     #resume_btn{
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: space-between;
         margin: auto;
     }
@@ -552,7 +551,14 @@ color: rgb(255, 166, 64);
         padding-bottom: 50px;
         justify-content: space-around;
     }
-
+    #all_logo>div{
+        width: 160px;
+        height: 160px;
+    }
+    #all_logo>div>img{
+        width: 80px;
+        height: 80px;
+    }
     #projects{
         height: auto;
         padding-bottom: 50px;
@@ -584,6 +590,7 @@ color: rgb(255, 166, 64);
         display: flex;
         justify-content: space-between;
         margin: auto;
+        margin-top: 20px;
     }
     #statistic{
         height: auto;
@@ -625,15 +632,15 @@ color: rgb(255, 166, 64);
         margin: auto;
     }
 #contact_div>.contact_div_1{
-    width:80%;
+    width:75%;
     height: 70px;
-   font-size: 18px;
+   font-size: 16px;
    padding: 0 15px;
 }
 #contact_div>.contact_div_2{
-    width:80%;
+    width:75%;
     height: 70px;
-   font-size: 18px;
+   font-size: 16px;
    padding: 0 15px;
 }
 }

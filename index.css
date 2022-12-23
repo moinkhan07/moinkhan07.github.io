@@ -309,7 +309,7 @@ nav ul li p:hover{
 /* ---------------------------------------------Statistic end here----------------------------------- */
 #github{
     width: 100%;
-    height: 1800px;
+    padding-bottom: 50px;
     background-color:#234365;
 }
 #github>h1{
@@ -643,4 +643,52 @@ color: rgb(255, 166, 64);
    font-size: 16px;
    padding: 0 15px;
 }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #navbar{
+        width: 100%;
+    }
+    #contact_div>.contact_div_1{
+        width:40%;
+        height: 70px;
+       font-size: 16px;
+       padding: 0 15px;
+    }
+    #contact_div>.contact_div_2{
+        width:40%;
+        height: 70px;
+       font-size: 16px;
+       padding: 0 15px;
+    }
+    #statistic_div{
+        width: 85%;
+    }
+    #projects>.project_>.project_img{
+        width: 45%;
+    }
+    .project_{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #projects>.project_>.projects_Info{
+       width: 45%;
+    }
+    #all_logo{
+        width: 90%;
+        height: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-between;
+        gap: 15px;
+    }
+    nav ul li{
+        margin: 10px 10px 0 10px;
+    }
 }

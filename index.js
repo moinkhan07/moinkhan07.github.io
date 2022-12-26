@@ -7,4 +7,3 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-220px";
 }
-

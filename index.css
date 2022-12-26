@@ -350,6 +350,12 @@ nav ul li p:hover{
 }
 #mul>img{
     width: 100%;
+    margin-bottom: 40px;
+}
+.calendar{
+    width: 80%;
+    color: white;
+    font-size:25px;
 }
 
 /* ---------------------------------------------Github end here--------------------------------------- */

@@ -28,16 +28,23 @@ display: inline-block;
 list-style: none;
 margin: 10px 20px;
 }
-nav ul li p{
+nav ul li a{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-nav ul li p:hover{
+nav ul li a:hover{
     color: rgb(255, 166, 64);
     cursor: pointer;
 }
-
+#project_{
+    height: 50px;
+    background-color: rgb(244, 244, 244);
+}
+#home_{
+    height: 50px;
+    background-color: rgb(244, 244, 244);
+}
 
                             /* ======================Navbar end here========================== */
 #home{
@@ -60,6 +67,10 @@ nav ul li p:hover{
 }
 #hi{
     color: rgb(255, 166, 64);
+}
+#about_{
+    height: 55px;
+    background-color: rgb(244, 244, 244);
 }
 #social{
     width: 25%;
@@ -153,7 +164,7 @@ nav ul li p:hover{
 #tech-stack{
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: rgb(244, 244, 244);
 }
 #tech-stack>h1{
@@ -196,6 +207,10 @@ nav ul li p:hover{
     font-size: 25px;
     font-weight: bolder;
     color: #234365;
+}
+#skill_{
+    height: 60px;
+    background-color: rgb(244, 244, 244);
 }
 
 /* ---------------------------------------Skills end here---------------------------------- */
@@ -357,7 +372,10 @@ nav ul li p:hover{
     color: white;
     font-size:25px;
 }
-
+#github0{
+    height: 50px;
+    background-color: rgb(244, 244, 244);
+}
 /* ---------------------------------------------Github end here--------------------------------------- */
 #contact{
     width: 100%;

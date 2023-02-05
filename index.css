@@ -371,6 +371,7 @@ nav ul li a:hover{
 }
 .calendar{
     width: 80%;
+    padding-top: 20px;
     color: white;
     font-size:25px;
 }

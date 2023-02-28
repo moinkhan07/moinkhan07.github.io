@@ -176,13 +176,17 @@ nav ul li a:hover{
     font-size: 40px;
     color: rgb(255, 166, 64);
 }
+#toolstitle{
+    margin-top: 40px;
+}
 #all_logo{
-    width: 70%;
-    height: 600px;
+    width: 75%;
+    height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
+    gap: 25px 0px;
 }
 #all_logo>div{
     width: 180px;

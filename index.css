@@ -595,12 +595,12 @@ color: rgb(255, 166, 64);
         justify-content: space-around;
     }
     #all_logo>div{
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
     }
     #all_logo>div>img{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     #projects{
         height: auto;
@@ -675,13 +675,13 @@ color: rgb(255, 166, 64);
         margin: auto;
     }
 #contact_div>.contact_div_1{
-    width:75%;
+    width:78%;
     height: 70px;
    font-size: 13px;
    padding: 0 15px;
 }
 #contact_div>.contact_div_2{
-    width:75%;
+    width:78%;
     height: 70px;
    font-size: 13px;
    padding: 0 15px;

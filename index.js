@@ -10,5 +10,5 @@ function closemenu(){
 
 let openResume = document.getElementById("openResume");
 openResume.onclick=()=>{
-    window.open("./resource/Moin_Khan_Resume.pdf", '_blank');
+    window.open("./resource/fw19_0323_Moin_Khan_Resume.pdf", '_blank');
 }

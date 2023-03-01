@@ -476,6 +476,7 @@ color: rgb(255, 166, 64);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 17px;
 }
 #white{
     color: white;
@@ -686,9 +687,9 @@ color: rgb(255, 166, 64);
    font-size: 13px;
    padding: 0 15px;
 }
-}
 #copyright>p{
     font-size: 13px;
+}
 }
 
 /* ---------------------------------------------------------------------------------------------------- */

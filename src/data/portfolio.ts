@@ -195,13 +195,9 @@ export const projects: Project[] = [
     stack: ["Spring Boot", "Java", "MySQL", "JPA"],
     links: [
       {
-        label: "Demo Video",
-        url: "https://drive.google.com/file/d/1F0wMp7ld0vTYAdj5o3Q26754K90rmxgg/view",
-        primary: true,
-      },
-      {
         label: "Code",
         url: "https://github.com/moinkhan07/Online-Food-Delivery-App",
+        primary: true,
       },
     ],
     highlights: [

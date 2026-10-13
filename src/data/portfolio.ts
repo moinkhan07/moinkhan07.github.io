@@ -1,310 +1,236 @@
+/* ------------------------------------------------------------------
+ * Single source of truth for every word on the site.
+ * Edit here — the train, HUD, sections and SEO metadata all read from it.
+ * ------------------------------------------------------------------ */
+
 export const profile = {
   name: "Moin Khan",
+  first: "Moin",
+  last: "Khan",
   title: "Full-Stack Web & Mobile App Developer",
+  roles: [
+    "Full-Stack Engineer",
+    "React & Next.js Specialist",
+    "React Native Developer",
+    "Node.js API Builder",
+  ],
   email: "moin6k@gmail.com",
   phone: "+91 9082846069",
+  phoneHref: "tel:+919082846069",
   location: "Mumbai, India",
+  timezone: "Asia/Kolkata",
   github: "https://github.com/moinkhan07",
   linkedin: "https://www.linkedin.com/in/moinkhan07/",
-  whatsapp: "https://wa.me/+919082846069",
-  bio: "I design and engineer production-grade web platforms and mobile apps end-to-end — from pixel-perfect interfaces to scalable APIs, payments, and AI integrations.",
+  whatsapp: "https://wa.me/919082846069",
+  site: "https://moinkhan07.github.io",
+  bio: "I design and engineer production-grade web platforms and mobile apps end-to-end — from pixel-perfect interfaces to scalable APIs, payments and AI integrations.",
 };
 
-export const experience = [
-  {
-    role: "Software Developer",
-    company: "Webtrixz",
-    location: "Mumbai, Andheri West (Onsite)",
-    period: "Dec 2025 – Present",
-    points: [
-      "Developing and maintaining web and mobile applications using React Native, Next.js, Node.js, and MongoDB.",
-      "Building scalable REST APIs and backend services for business applications.",
-      "Creating responsive, high-performance web interfaces and cross-platform mobile apps.",
-      "Collaborating on full-stack development, feature implementation, and application optimization.",
-    ],
-  },
-  {
-    role: "Senior Software Developer",
-    company: "Global Web Technology",
-    location: "Bangalore (WFH)",
-    period: "Oct 2024 – Dec 2025",
-    points: [
-      "Built and optimized mobile apps and websites for better speed, UX, and overall performance.",
-      "Improved UI/UX designs to increase user engagement and retention.",
-      "Integrated React.js and Node.js for scalable web interfaces.",
-    ],
-  },
-  {
-    role: "Junior Software Developer (Internship)",
-    company: "Dhawks",
-    location: "Mumbai (Onsite)",
-    period: "Jul 2024 – Sep 2024",
-    points: [
-      "Enhanced company website using Next.js with improved UI/UX and performance.",
-      "Optimized responsiveness, component structure, and page speed.",
-      "Built a complete Computer Management System for shop operations.",
-    ],
-  },
-];
+/** One entry per coach. Order = order on the page = order on the train. */
+export const stations = [
+  { id: "departure", no: "01", short: "Hero", name: "Departure", color: "#ffb23f" },
+  { id: "about", no: "02", short: "About", name: "The Driver", color: "#ff7a59" },
+  { id: "skills", no: "03", short: "Skills", name: "Cargo Manifest", color: "#4fd1a5" },
+  { id: "projects", no: "04", short: "Work", name: "Window Seat", color: "#5ab4ff" },
+  { id: "experience", no: "05", short: "Career", name: "Route Map", color: "#b69cff" },
+  { id: "playground", no: "06", short: "Lab", name: "Observation Car", color: "#ff6fa8" },
+  { id: "contact", no: "07", short: "Contact", name: "Terminus", color: "#f5d06f" },
+] as const;
 
-export type Project = {
-  title: string;
-  tagline: string;
-  description: string;
-  period?: string;
-  stack: string[];
-  links: { label: string; url: string; primary?: boolean }[];
-  highlights: string[];
-  accent: string; // tailwind gradient classes
-  category: "Flagship" | "Mobile" | "Web" | "Clone";
-  image?: string;
-};
-
-export const projects: Project[] = [
-  {
-    title: "Cash In Phone",
-    tagline: "Cashify-like ecosystem — Web, Mobile & Admin",
-    description:
-      "A complete resale ecosystem with customer app, admin website and vendor app — including pricing engine, repair workflow, vendor operations, dashboards and real-time order tracking.",
-    period: "Aug 2025 – Dec 2025",
-    stack: ["React Native", "Next.js", "Node.js", "Express", "MySQL"],
-    links: [
-      { label: "Live Website", url: "https://cashinphone.com/", primary: true },
-      {
-        label: "Play Store",
-        url: "https://play.google.com/store/apps/details?id=com.cashinphone",
-      },
-    ],
-    highlights: [
-      "Built full backend: pricing engine, repair workflow, vendor ops",
-      "3 connected products: customer app, admin web, vendor app",
-      "Order tracking, auth, dashboards & responsive UI",
-    ],
-    accent: "from-amber-400 via-orange-500 to-rose-500",
-    category: "Flagship",
-  },
-  {
-    title: "Smart Resume Pro",
-    tagline: "AI Resume Analysis Platform",
-    description:
-      "An AI-powered resume platform with 3 apps — main platform, admin panel and college panel — using OpenAI for ATS scoring, keyword analysis, grammar and actionable suggestions.",
-    period: "Jun 2025 – Aug 2025",
-    stack: ["Next.js", "Node.js", "MySQL", "OpenAI API"],
-    links: [
-      { label: "Live Website", url: "https://smartresume.pro/", primary: true },
-    ],
-    highlights: [
-      "OpenAI API: ATS score, keywords, grammar, suggestions",
-      "Role-based access, analytics, student onboarding",
-      "Built 3 connected dashboards from scratch",
-    ],
-    accent: "from-violet-500 via-fuchsia-500 to-pink-500",
-    category: "Flagship",
-  },
-  {
-    title: "C3 Fitness Science",
-    tagline: "Gym Management System • 2000+ users",
-    description:
-      "A complete fitness ecosystem with User App, Trainer App and Admin Panel — slot booking, BMI tracking, diet & exercise plans, notifications and reports.",
-    period: "Apr 2025 – Jun 2025",
-    stack: ["React Native", "Node.js", "Express", "MySQL"],
-    links: [
-      {
-        label: "iOS App",
-        url: "https://apps.apple.com/in/app/c3-fitness-science/id6743337876",
-        primary: true,
-      },
-      {
-        label: "Android App",
-        url: "https://play.google.com/store/apps/details?id=com.c3fitness",
-      },
-    ],
-    highlights: [
-      "User App: slot booking, BMI, diet/exercise plans",
-      "Trainer App: schedule, assigned clients, tracking",
-      "Admin Panel: users, plans, slots & reports",
-    ],
-    accent: "from-emerald-400 via-teal-500 to-cyan-500",
-    category: "Mobile",
-  },
-  {
-    title: "Studyified",
-    tagline: "School Management System",
-    description:
-      "An all-in-one school management portal — grades, attendance, fees and teacher messages in a single signed-in space for parents and students.",
-    stack: ["Next.js", "Node.js", "MySQL"],
-    links: [
-      {
-        label: "Live Website",
-        url: "https://app.studyified.com/",
-        primary: true,
-      },
-    ],
-    highlights: [
-      "Live attendance and grades for parents",
-      "Direct messaging with teachers",
-      "Fee receipts and reminders",
-    ],
-    accent: "from-blue-500 via-indigo-500 to-violet-500",
-    category: "Web",
-  },
-  {
-    title: "Studio Refuel",
-    tagline: "Fitness Studio Booking App",
-    description:
-      "A native Android booking experience for a premium fitness studio — class schedules, member profile and seamless reservations.",
-    stack: ["React Native", "Node.js", "MySQL"],
-    links: [
-      {
-        label: "Play Store",
-        url: "https://play.google.com/store/apps/details?id=org.studiorefuel",
-        primary: true,
-      },
-    ],
-    highlights: [
-      "Native-feel mobile UX",
-      "Real-time class availability",
-      "Member-first booking flow",
-    ],
-    accent: "from-rose-500 via-pink-500 to-fuchsia-500",
-    category: "Mobile",
-  },
-  {
-    title: "MarkDeals",
-    tagline: "E-commerce platform",
-    description:
-      "A full-stack e-commerce website built solo — product catalog, cart, auth and order management.",
-    stack: ["Spring Boot", "Java", "MySQL", "JPA", "Hibernate"],
-    links: [
-      { label: "Live", url: "https://markdeals.netlify.app/", primary: true },
-      { label: "Code", url: "https://github.com/moinkhan07/MarkDeals" },
-    ],
-    highlights: [
-      "Solo build in 28 days",
-      "Spring Data JPA + Hibernate backend",
-      "Vanilla JS frontend",
-    ],
-    accent: "from-amber-500 via-orange-500 to-red-500",
-    category: "Web",
-  },
-  {
-    title: "Go 4 Food",
-    tagline: "Online Food Delivery REST API",
-    description:
-      "A clean REST API for an online food-delivery application with order, restaurant and user flows.",
-    stack: ["Spring Boot", "Java", "MySQL", "JPA"],
-    links: [
-      {
-        label: "Code",
-        url: "https://github.com/moinkhan07/Online-Food-Delivery-App",
-        primary: true,
-      },
-    ],
-    highlights: [
-      "RESTful architecture",
-      "5-day sprint build",
-      "Spring Data JPA persistence",
-    ],
-    accent: "from-lime-400 via-green-500 to-emerald-500",
-    category: "Web",
-  },
-  {
-    title: "Mytheresa Clone",
-    tagline: "Luxury e-commerce clone",
-    description:
-      "Team clone of mytheresa.com — implemented navbar and footer in a team of 7 developers.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    links: [
-      {
-        label: "Live",
-        url: "https://sunny-bubblegum-120988.netlify.app/",
-        primary: true,
-      },
-      {
-        label: "Code",
-        url: "https://github.com/Mozakir178/Mytheresa.com-Clone",
-      },
-    ],
-    highlights: ["Team of 7 devs", "Pixel-accurate UI", "5-day sprint"],
-    accent: "from-slate-400 via-gray-500 to-zinc-500",
-    category: "Clone",
-  },
-  {
-    title: "Lumen5 Clone",
-    tagline: "Video creation platform clone",
-    description:
-      "Team-lead role on a clone of lumen5.com — managed git, team and built the pricing page.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    links: [
-      {
-        label: "Live",
-        url: "https://lumen5project2.netlify.app/",
-        primary: true,
-      },
-      { label: "Code", url: "https://github.com/moinkhan07/Lumen5.com-clone" },
-    ],
-    highlights: [
-      "Team Leader of 5 devs",
-      "Managed git repository",
-      "Built pricing page",
-    ],
-    accent: "from-sky-400 via-blue-500 to-indigo-500",
-    category: "Clone",
-  },
-];
-
-export const skills = {
-  Languages: ["Java", "JavaScript", "TypeScript", "Python", "PHP"],
-  "Frontend & Mobile": [
-    "React.js",
-    "Next.js",
-    "React Native",
-    "Tailwind CSS",
-    "HTML",
-    "CSS",
-  ],
-  "Backend & APIs": [
-    "Node.js",
-    "Express",
-    "Spring Boot",
-    "Hibernate",
-    "REST APIs",
-  ],
-  "Databases & Cloud": ["MySQL", "MongoDB", "AWS", "Railway"],
-  Tools: ["VS Code", "Postman", "Git", "GitHub", "STS", "Eclipse"],
-};
+export type StationId = (typeof stations)[number]["id"];
 
 export const stats = [
-  { value: "5+", label: "Years Building" },
-  { value: "15+", label: "Production Projects" },
-  { value: "200+", label: "Users Served" },
-  { value: "3", label: "Apps on Stores" },
+  { value: 5, suffix: "+", label: "Years building" },
+  { value: 15, suffix: "+", label: "Production projects" },
+  { value: 3, suffix: "", label: "Apps on the stores" },
+  { value: 200, suffix: "+", label: "Users served" },
 ];
 
-export const education = [
+/** Skills board — the "cargo manifest". */
+export const skillGroups = [
   {
-    title: "Bachelor of Computer Application",
+    code: "FE",
+    name: "Frontend",
+    platform: "P1",
+    status: "On time",
+    items: ["React.js", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS"],
+  },
+  {
+    code: "MB",
+    name: "Mobile",
+    platform: "P2",
+    status: "Boarding",
+    items: ["React Native", "Expo"],
+  },
+  {
+    code: "BE",
+    name: "Backend",
+    platform: "P3",
+    status: "On time",
+    items: ["Node.js", "Express.js", "REST APIs", "API Deployment"],
+  },
+  {
+    code: "DB",
+    name: "Databases",
+    platform: "P4",
+    status: "On time",
+    items: ["MongoDB", "MySQL"],
+  },
+  {
+    code: "CL",
+    name: "Cloud & CI",
+    platform: "P5",
+    status: "Express",
+    items: ["Firebase", "AWS", "GitHub Actions"],
+  },
+];
+
+export type PreviewKind = "erp" | "spaces" | "commerce" | "crm" | "services";
+
+export type Project = {
+  slug: string;
+  title: string;
+  kind: string;
+  tagline: string;
+  description: string;
+  highlights: string[];
+  stack: string[];
+  links: { label: string; url: string }[];
+  preview: PreviewKind;
+  color: string;
+};
+
+/**
+ * Featured projects.
+ * NOTE: descriptions/stacks for SearchSpaces, LekhaLooms, Webtrixz CRM and
+ * Ontime were written from project briefs — review the wording and add live
+ * links where you have them (links: [] simply hides the button).
+ */
+export const projects: Project[] = [
+  {
+    slug: "studyified",
+    title: "Studyified",
+    kind: "School ERP System",
+    tagline: "The whole school, in one signed-in space.",
+    description:
+      "An all-in-one school management platform — attendance, grades, fees, timetables and teacher-parent messaging — with dedicated views for admins, teachers, parents and students.",
+    highlights: ["Live attendance & grades for parents", "Fee receipts & automated reminders", "Direct teacher messaging"],
+    stack: ["Next.js", "Node.js", "Express.js", "MySQL"],
+    links: [{ label: "Visit live app", url: "https://app.studyified.com/" }],
+    preview: "erp",
+    color: "#5ab4ff",
+  },
+  {
+    slug: "searchspaces",
+    title: "SearchSpaces",
+    kind: "Coworking Space Platform",
+    tagline: "Find a desk anywhere in Mumbai — compare, shortlist, enquire.",
+    description:
+      "A commercial office-space discovery platform covering coworking, managed offices, meeting rooms and leasing across Mumbai’s key business districts, with brand hubs, building hubs and side-by-side comparison.",
+    highlights: ["City, brand & building hub pages", "Filterable listings with comparison", "Lead capture & enquiry flows"],
+    stack: ["React.js", "TypeScript", "Node.js", "Tailwind CSS"],
+    links: [],
+    preview: "spaces",
+    color: "#4fd1a5",
+  },
+  {
+    slug: "lekhalooms",
+    title: "LekhaLooms",
+    kind: "E-commerce Website & Mobile App",
+    tagline: "A handloom store on the web and in your pocket.",
+    description:
+      "A full e-commerce experience for a textile brand — a storefront website and a companion mobile app sharing one backend for catalogue, cart, checkout, payments and order tracking.",
+    highlights: ["Shared API for web & app", "Catalogue, cart & secure checkout", "Order tracking & admin tools"],
+    stack: ["Next.js", "React Native", "Node.js", "MongoDB"],
+    links: [],
+    preview: "commerce",
+    color: "#ff7a59",
+  },
+  {
+    slug: "webtrixz-crm",
+    title: "Webtrixz CRM",
+    kind: "Internal Client Management",
+    tagline: "Every client, document and deal — one pipeline.",
+    description:
+      "An internal CRM for a digital agency: client records, KYC document management, a deal pipeline and bulk Excel import/export, with role-based access for the team.",
+    highlights: ["Client CRUD with KYC documents", "Excel import / export", "Paginated, searchable records"],
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    links: [],
+    preview: "crm",
+    color: "#b69cff",
+  },
+  {
+    slug: "ontime",
+    title: "Ontime",
+    kind: "Government Services Marketplace",
+    tagline: "Government paperwork, booked like a cab.",
+    description:
+      "A marketplace that connects citizens with verified agents for government services — browse services, book a slot, upload documents and track every application step in real time.",
+    highlights: ["Service catalogue & slot booking", "Document upload & verification", "Live application tracking"],
+    stack: ["React Native", "Next.js", "Node.js", "MongoDB"],
+    links: [],
+    preview: "services",
+    color: "#ff6fa8",
+  },
+];
+
+/** Earlier shipped work — shown as a compact ticket rail under the featured window. */
+export const alsoShipped = [
+  { title: "Cash In Phone", note: "Resale ecosystem · web, app & admin", url: "https://cashinphone.com/" },
+  { title: "Smart Resume Pro", note: "AI resume analysis · OpenAI", url: "https://smartresume.pro/" },
+  { title: "C3 Fitness Science", note: "Gym app · 2000+ users", url: "https://apps.apple.com/in/app/c3-fitness-science/id6743337876" },
+  { title: "Studio Refuel", note: "Studio booking app", url: "https://play.google.com/store/apps/details?id=org.studiorefuel" },
+  { title: "MarkDeals", note: "E-commerce · Spring Boot", url: "https://markdeals.netlify.app/" },
+];
+
+/** Route map — oldest first, so the journey moves forward in time. */
+export const journey = [
+  {
+    kind: "origin",
+    title: "Bachelor of Computer Applications",
     org: "Chandigarh University",
-    period: "Jul 2021 – Jun 2024",
-    location: "Mohali, Punjab",
+    place: "Mohali, Punjab",
+    period: "Jul 2021 — Jun 2024",
+    points: ["Foundations in data structures, databases and software engineering.", "Certified by HackerRank in JavaScript, React, SQL and Problem Solving."],
+    tech: ["Java", "JavaScript", "SQL"],
   },
   {
-    title: "Higher Secondary (12th)",
-    org: "Rizvi College of Arts, Science & Commerce",
-    period: "Jul 2019 – Apr 2021",
-    location: "Mumbai",
+    kind: "work",
+    title: "Junior Software Developer (Internship)",
+    org: "Dhawks",
+    place: "Mumbai · Onsite",
+    period: "Jul 2024 — Sep 2024",
+    points: [
+      "Enhanced the company website with Next.js — better UI/UX and performance.",
+      "Optimised responsiveness, component structure and page speed.",
+      "Built a complete Computer Management System for shop operations.",
+    ],
+    tech: ["Next.js", "React.js", "Node.js"],
   },
   {
-    title: "High School",
-    org: "Shree Mumbadevi Vidya Mandir",
-    period: "Jun 2018 – Mar 2019",
-    location: "Mumbai",
+    kind: "work",
+    title: "Senior Software Developer",
+    org: "Global Web Technology",
+    place: "Bangalore · Remote",
+    period: "Oct 2024 — Dec 2025",
+    points: [
+      "Built and optimised mobile apps and websites for speed, UX and performance.",
+      "Improved UI/UX designs to lift engagement and retention.",
+      "Integrated React.js and Node.js for scalable web interfaces.",
+    ],
+    tech: ["React Native", "React.js", "Node.js", "MySQL"],
   },
-];
-
-export const certificates = [
-  "JavaScript (Intermediate) — HackerRank",
-  "SQL (Basic) — HackerRank",
-  "React (Basic) — HackerRank",
-  "Problem Solving (Basic) — HackerRank",
-];
+  {
+    kind: "now",
+    title: "Software Developer",
+    org: "Webtrixz",
+    place: "Mumbai, Andheri West · Onsite",
+    period: "Dec 2025 — Present",
+    points: [
+      "Developing web and mobile applications with React Native, Next.js, Node.js and MongoDB.",
+      "Building scalable REST APIs and backend services for business applications.",
+      "Shipping responsive, high-performance interfaces and cross-platform apps.",
+    ],
+    tech: ["React Native", "Next.js", "Node.js", "MongoDB"],
+  },
+] as const;
